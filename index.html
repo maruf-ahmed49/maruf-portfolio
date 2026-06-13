@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruf | Portfolio</title>
+    <!-- FontAwesome Icon Link (For Social Media Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Maruf<span>.</span></div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+   <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 100px 10% 60px 10%; background: #081b29; color: #fff; gap: 40px;">
+
+    <div class="hero-content" style="flex: 1; min-width: 300px;">
+        <h1 style="font-size: 40px; font-weight: 700; margin-bottom: 10px;">Hi, I'm Maruf Ahmed</h1>
+        <h2 class="dynamic-text" style="font-size: 20px; color: #00abf0; margin-bottom: 20px;">Student | Northern University of Business & Technology</h2>
+        <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px; color: #b0c4de;">I'm a CSE Student with a strong science background, passionate about technology and computing. Alongside my engineering studies, I specialize in Digital Marketing to bridge the gap between technical innovation and online brand growth. Let's build something impactful together!</p>
+        
+        <div class="hero-buttons" style="margin-bottom: 30px; display: flex; gap: 15px;">
+            <a href="cv.pdf" download class="btn-filled">Download CV</a>
+            <a href="https://wa.me/+8801313614812" target="_blank" class="btn-outlined">Let's Talk</a>
+        </div>
+
+        <div class="social-icons" style="display: flex; gap: 15px;">
+            <a href="https://www.facebook.com/syringe2049" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/syringe_2" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/maruf-ahmed" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:marufahmed1295@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="hero-image" style="flex: 1; display: flex; justify-content: center; align-items: center; min-width: 300px;">
+        <img src="maruf_face.png" alt="Maruf Ahmed" style="max-width: 70%; height: auto; max-height: 300px; border-radius: 12px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); object-fit: cover;">
+    </div>
+
+</section>
+     <!-- About Section -->
+<section id="about" style="padding: 100px 10%; background: #112e42; color: #fff;">
+    <h2 style="font-size: 40px; margin-bottom: 30px; text-align: center;">About <span style="color: #00abf0;">Me</span></h2>
+    <p style="font-size: 18px; line-height: 1.6; color: #b0c4de; max-width: 800px; margin: 0 auto; text-align: center;">
+       ​Hello! I am a passionate and tech-savvy individual currently pursuing my B.Sc. in Computer Science and Engineering (CSE) at the Northern University of Business and Technology, Khulna. Having a strong background in Science since my SSC and HSC days, I have always been driven by logic, technology, and innovation.
+​      As a CSE student, I have built a solid foundation in computer computing, software development, and modern technologies. But my skills don't stop at coding. I am also wrapping up an advanced course in Digital Marketing, which allows me to bridge the gap between technical development and online brand growth.
+       ​I love solving problems, exploring new tech tools, and creating impactful digital experiences. Whether it’s building a tech solution or designing a data-driven marketing strategy, I am always ready to take on new challenges!
+    </p>
+</section>
+<section id="services" style="padding: 100px 10%; background: #081b29; color: #fff;">
+    <h2 style="font-size: 40px; margin-bottom: 50px; text-align: center;">My <span style="color: #00abf0;">Services</span></h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px 0; width: 100%;">
+
+<div class="service-box" onclick="openServiceModal('social')" style="background: #061523; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 171, 240, 0.2); cursor: pointer; transition: 0.3s;"> 
+                  <div style="height: 140px; background-image: url('social.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 15px;">
+                    <h3 style="font-size: 16px; color: #fff; margin-bottom: 5px; font-weight: 600;">Social Media Campaign</h3>
+                    <p style="font-size: 12px; color: #00abf0; margin-bottom: 0;">Marketing</p>
+                </div>
+            </div>
+
+<div class="service-box" onclick="openServiceModal('seo')" style="background: #061523; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 171, 240, 0.2); cursor: pointer; transition: 0.3s;">
+            <div style="height: 140px; background-image: url('seo.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="padding: 15px;">
+                <h3 style="font-size: 16px; color: #fff; margin-bottom: 5px; font-weight: 600;">SEO Optimization</h3>
+                <p style="font-size: 12px; color: #00abf0; margin-bottom: 0;">SEO</p>
+            </div>
+        </div>
+
+<div class="service-box" onclick="openServiceModal('paid-ads')" style="background: #061523; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 171, 240, 0.2); cursor: pointer; transition: 0.3s;">                <div style="height: 140px; background-image: url('ads.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 15px;">
+                    <h3 style="font-size: 16px; color: #fff; margin-bottom: 5px; font-weight: 600;">Facebook Ads Campaign</h3>
+                    <p style="font-size: 12px; color: #00abf0; margin-bottom: 0;">Paid Ads</p>
+                </div>
+            </div>
+
+<div class="service-box" onclick="openServiceModal('website')" style="background: #061523; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 171, 240, 0.2); cursor: pointer; transition: 0.3s;">                <div style="height: 140px; background-image: url('business.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 15px;">
+                    <h3 style="font-size: 16px; color: #fff; margin-bottom: 5px; font-weight: 600;">Business Website</h3>
+                    <p style="font-size: 12px; color: #00abf0; margin-bottom: 0;">Web Development</p>
+                </div>
+            </div>
+
+<div class="service-box" onclick="openServiceModal('ecommerce')" style="background: #061523; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 171, 240, 0.2); cursor: pointer; transition: 0.3s;">                <div style="height: 140px; background-image: url('ecommerce.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 15px;">
+                    <h3 style="font-size: 16px; color: #fff; margin-bottom: 5px; font-weight: 600;">E-commerce Website</h3>
+                    <p style="font-size: 12px; color: #00abf0; margin-bottom: 0;">Web Development</p>
+                </div>
+            </div>
+
+        </div> 
+
+
+
+
+         </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Certificates and Projects (Portfolio) Section -->
+    <section id="portfolio">
+        <h2 class="section-title">My <span>Certificates</span></h2>
+        
+        <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <div class="card-icon"><i class="fas fa-school"></i></div>
+            <h3>Secondary School (SSC)</h3>
+            <p class="institute">Science Group | Khulna</p>
+            <p class="card-desc">Achieved Secondary School Certificate with strong foundation in science, mathematics, and analytical reasoning.</p>
+            <a href="ssc.pdf" target="_blank" class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Higher Secondary (HSC)</h3>
+            <p class="institute">Science Group | Khulna</p>
+            <p class="card-desc">Achieved Higher Secondary School Certificate, deepening technical and scientific knowledge preparatory for engineering.</p>
+            <a href="hsc.pdf" target="_blank" class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Computer Course Certificate</h3>
+            <p class="institute">Prince Computer Institute</p>
+            <p class="card-desc">Successfully completed a comprehensive course on Full-Stack Web Development and design core principles.</p>
+            <a href="computer-course.pdf" target="_blank" class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3>Digital Marketing</h3>
+            <p class="institute">Dreamland IT (SR Dream IT)</p>
+            <p class="card-desc">Successfully completed professional training on Digital Marketing. Acquired specialized skills in SEO, social media marketing, and online brand growth strategies.</p>
+            <a href="digital-marketing-cert.pdf" target="_blank" class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+    </section>
+    <!-- Contact Section -->
+<section id="contact" style="padding: 100px 10%; background: #112e42; color: #fff; text-align: center;">
+    <h2 style="font-size: 40px; margin-bottom: 20px;">Contact <span style="color: #00abf0;">Me</span></h2>
+    <p style="font-size: 16px; color: #b0c4de; max-width: 600px; margin: 0 auto 50px auto; line-height: 1.6;">
+        Have a project in mind, want to discuss a business opportunity, or just want to say hello? Feel free to reach out to me through Gmail or WhatsApp. I am available on both!
+    </p>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+        
+        <!-- Gmail Option -->
+        <a href="mailto:marufahmed1295@gmail.com" style="display: flex; align-items: center; gap: 15px; background: #081b29; padding: 20px 40px; border-radius: 8px; color: #fff; text-decoration: none; font-size: 18px; font-weight: 600; border: 2px solid transparent; transition: 0.5s;" onmouseover="this.style.borderColor='#00abf0'; this.style.color='#00abf0'" onmouseout="this.style.borderColor='transparent'; this.style.color='#fff'">
+            <i class="fas fa-envelope" style="font-size: 25px;"></i> Send an Email
+        </a>
+
+        <!-- WhatsApp Option -->
+        <a href="https://wa.me/8801313614812" target="_blank" style="display: flex; align-items: center; gap: 15px; background: #081b29; padding: 20px 40px; border-radius: 8px; color: #fff; text-decoration: none; font-size: 18px; font-weight: 600; border: 2px solid transparent; transition: 0.5s;" onmouseover="this.style.borderColor='#25d366'; this.style.color='#25d366'" onmouseout="this.style.borderColor='transparent'; this.style.color='#fff'">
+            <i class="fab fa-whatsapp" style="font-size: 25px;"></i> Chat on WhatsApp
+        </a>
+
+    </div>
+</section>
+<div id="serviceModal" class="custom-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(8, 27, 41, 0.95); backdrop-filter: blur(8px); align-items: center; justify-content: center;">
+    
+    <div class="modal-content" style="background: #112e42; border: 2px solid #00abf0; box-shadow: 0 0 30px rgba(0, 171, 240, 0.5); padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; color: #fff; position: relative; animation: fadeIn 0.4s ease;">
+        
+        <span class="close-btn" onclick="closeServiceModal()" style="position: absolute; right: 20px; top: 15px; font-size: 28px; color: #b0c4de; cursor: pointer; transition: 0.3s;">&times;</span>
+        
+        <h2 id="modalTitle" style="color: #00abf0; font-size: 26px; margin-bottom: 15px; font-weight: 600;">Service Title</h2>
+        <div id="modalBody" style="font-size: 16px; line-height: 1.7; color: #b0c4de;">
+            </div>
+    </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+.close-btn:hover { color: #00abf0 !important; }
+</style>
+
+<script>
+function openServiceModal(serviceType) {
+    const modal = document.getElementById('serviceModal');
+    const title = document.getElementById('modalTitle');
+    const body = document.getElementById('modalBody');
+    
+   if(serviceType === 'social') {
+        title.innerText = "Social Media Campaign & Marketing";
+        // টাইটেল এর সাইজ ও মার্জিন সুন্দর করার জন্য একটু সিএসএস স্টাইল সেট করা
+        title.style.fontSize = "22px";
+        title.style.marginBottom = "15px";
+        title.style.color = "#00abf0";
+
+        body.innerHTML = `
+            <div style="max-height: 55vh; overflow-y: auto; padding-right: 8px; scrollbar-width: thin;">
+                
+                <div style="margin-bottom: 12px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">What is Social Media Marketing?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        Using platforms like Facebook, Instagram, LinkedIn, and Twitter to promote your business, connect with your target audience, and build a strong online presence.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">Why is it Important?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        A well-optimized campaign drives high-quality traffic, increases brand loyalty, boosts user engagement, and rapidly converts casual visitors into paying customers.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #00abf0; font-size: 14.5px; margin-bottom: 8px; font-weight: 600;">What I Will Do For You:</h4>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Target audience research & strategic content planning.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Designing eye-catching visuals & high-converting ad copies.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Managing organic page growth & boosting customer engagement.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Setting up laser-targeted paid ad campaigns to maximize ROI.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        `;
+    }
+    else if(serviceType === 'seo') {
+        title.innerText = "SEO Optimization";
+        title.style.fontSize = "22px";
+        title.style.marginBottom = "15px";
+        title.style.color = "#00abf0";
+
+        body.innerHTML = `
+            <div style="max-height: 55vh; overflow-y: auto; padding-right: 8px; scrollbar-width: thin;">
+                
+                <div style="margin-bottom: 12px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">What is SEO Optimization?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        SEO (Search Engine Optimization) is the process of optimizing your website to rank higher on Google search results, making it easier for customers to find you organically.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">Why is it Important?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        Higher search rankings bring continuous free, organic traffic to your site, build immense brand trust, and generate high-quality leads without relying constantly on paid ads.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #00abf0; font-size: 14.5px; margin-bottom: 8px; font-weight: 600;">What I Will Do For You:</h4>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Profitable & high-search volume keyword research.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> On-Page SEO (Meta tags, headings, content optimization).
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Technical SEO & website speed enhancement.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Google Search Console & Analytics setup with regular reporting.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        `;
+    }
+    else if(serviceType === 'paid-ads') {
+        title.innerText = "Facebook Ads & Boosting Campaign";
+        title.style.fontSize = "22px";
+        title.style.marginBottom = "15px";
+        title.style.color = "#00abf0";
+
+        body.innerHTML = `
+            <div style="max-height: 55vh; overflow-y: auto; padding-right: 8px; scrollbar-width: thin;">
+                
+                <div style="margin-bottom: 12px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">What is Paid Advertising?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        Paid Ads or Boosting Campaigns involve paying platforms like Facebook and Instagram to instantly display your products or services directly to a highly targeted audience.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">Why is it Important?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        It is the fastest way to generate instant sales, drive conversions, launch new products, and reach thousands of potential buyers within hours.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #00abf0; font-size: 14.5px; margin-bottom: 8px; font-weight: 600;">What I Will Do For You:</h4>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Advanced custom & Lookalike audience targeting.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> High-converting sales funnel creation & Meta Pixel setup.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> A/B testing of ad copies and continuous budget optimization.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Running laser-focused retargeting ads to maximize your total sales.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        `;
+    }
+    else if(serviceType === 'ecommerce') {
+        title.innerText = "E-commerce Website Development";
+        title.style.fontSize = "22px";
+        title.style.marginBottom = "15px";
+        title.style.color = "#00abf0";
+
+        body.innerHTML = `
+            <div style="max-height: 55vh; overflow-y: auto; padding-right: 8px; scrollbar-width: thin;">
+                
+                <div style="margin-bottom: 12px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">What is E-commerce Website Development?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        An E-commerce website is a fully dynamic online store equipped with a product catalog, shopping cart, and payment options, allowing customers to buy directly from you.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">Why is it Important?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        It breaks geographical boundaries, expands your target market globally, and automates your retail or product sales process 24/7 without requiring a physical shop.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #00abf0; font-size: 14.5px; margin-bottom: 8px; font-weight: 600;">What I Will Do For You:</h4>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Advanced product listing with search filters and cart management.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Secure integration with Bkash, Nagad, Rocket, or international payment systems.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> User-friendly checkout page and comprehensive admin panel for tracking orders.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        `;
+    }
+     else if(serviceType === 'website') {
+        title.innerText = "Business Website Development";
+        title.style.fontSize = "22px";
+        title.style.marginBottom = "15px";
+        title.style.color = "#00abf0";
+
+        body.innerHTML = `
+            <div style="max-height: 55vh; overflow-y: auto; padding-right: 8px; scrollbar-width: thin;">
+                
+                <div style="margin-bottom: 12px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">What is a Business Website?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        A business website is a professional digital presence for your company, designed to showcase your services, build brand identity, and attract potential clients online.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #fff; font-size: 14.5px; margin-bottom: 4px; font-weight: 600;">Why is it Important?</h4>
+                    <p style="color: #b0c4de; font-size: 12.5px; line-height: 1.5; margin: 0;">
+                        It builds trust with your customers, serves as a 24/7 digital office, and makes your business accessible to global clients, helping you generate leads consistently.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #00abf0; font-size: 14.5px; margin-bottom: 8px; font-weight: 600;">What I Will Do For You:</h4>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Custom, modern, and professional UI/UX design.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Fully mobile-responsive and high-speed optimized layout.
+                        </li>
+                        <li style="margin-bottom: 6px; color: #b0c4de; font-size: 12px; display: flex; align-items: flex-start; line-height: 1.4;">
+                            <span style="color: #00abf0; margin-right: 6px;">✔</span> Contact forms, map integration, and SEO-friendly structure.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+    
+    modal.style.display = 'flex';
+}
+
+function closeServiceModal() {
+    document.getElementById('serviceModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('serviceModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
+<!-- Default Statcounter code for Maruf Portfolio
+https://maruf-portfolio49.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13295386; 
+var sc_invisible=0; 
+var sc_security="14dc7873"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13295386/0/14dc7873/0/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<a href="https://statcounter.com/p13295386/?guest=1">View My Stats</a>
+</body>
+</html>
