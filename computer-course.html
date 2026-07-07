@@ -1,0 +1,263 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Times+New+Roman&display=swap');
+
+  .cert-wrap {
+    background: #f5f0e0;
+    border: 12px solid #5a8a2a;
+    outline: 4px solid #3a6010;
+    outline-offset: -18px;
+    padding: 24px 32px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 0 0 40px rgba(90,138,42,0.08);
+  }
+
+  .corner {
+    position: absolute;
+    width: 48px; height: 48px;
+    background: #5a8a2a;
+    opacity: 0.5;
+    border-radius: 2px;
+  }
+  .corner-tl { top: 6px; left: 6px; clip-path: polygon(0 0, 100% 0, 0 100%); }
+  .corner-tr { top: 6px; right: 6px; clip-path: polygon(100% 0, 100% 100%, 0 0); }
+  .corner-bl { bottom: 6px; left: 6px; clip-path: polygon(0 0, 100% 100%, 0 100%); }
+  .corner-br { bottom: 6px; right: 6px; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 4px;
+  }
+
+  .logo-circle {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: #c8960c;
+    border: 3px solid #a07000;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .logo-text-inner {
+    font-size: 9px; font-weight: 700; color: #fff;
+    text-align: center; line-height: 1.2;
+    font-family: serif;
+    padding: 2px;
+  }
+
+  .org-block { text-align: center; flex: 1; }
+  .org-bn {
+    font-size: 18px; font-weight: 700; color: #1a5e1a;
+    letter-spacing: 0.5px; margin-bottom: 1px;
+    font-family: serif;
+  }
+  .org-en {
+    font-size: 20px; font-weight: 700; color: #8b0000;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+  }
+  .org-sub {
+    font-size: 11px; color: #333;
+    font-style: italic;
+    letter-spacing: 0.3px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 2px solid #5a8a2a;
+    margin: 6px 0;
+  }
+  .divider2 {
+    border: none;
+    border-top: 1px solid #5a8a2a;
+    margin: 3px 0;
+  }
+
+  .cert-title {
+    text-align: center;
+    font-size: 15px; color: #8b0000;
+    font-weight: 600; letter-spacing: 0.5px;
+    margin: 4px 0;
+    font-family: serif;
+  }
+
+  .reg-row {
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: #333;
+    margin: 4px 0 2px;
+  }
+
+  .session-row {
+    text-align: right; font-size: 11px; color: #333;
+    margin-bottom: 6px;
+  }
+
+  .cert-body { margin-top: 6px; }
+
+  .body-line {
+    font-size: 13px; color: #111;
+    margin: 6px 0;
+    line-height: 1.7;
+  }
+  .body-line .label { font-style: italic; }
+  .body-line .value {
+    border-bottom: 1px solid #555;
+    padding: 0 4px;
+    font-weight: 600;
+    font-family: serif;
+    color: #000;
+  }
+
+  .course-block {
+    text-align: center;
+    margin: 8px 0;
+  }
+  .course-title {
+    font-size: 13px; font-style: italic;
+    color: #222;
+  }
+  .course-name {
+    font-size: 15px; font-weight: 700;
+    color: #8b0000; font-family: serif;
+    text-decoration: underline;
+  }
+
+  .grade-line {
+    font-size: 13px; color: #111;
+    margin: 6px 0;
+  }
+  .grade-val {
+    font-size: 15px; font-weight: 700;
+    color: #8b0000; border-bottom: 1px solid #555;
+    padding: 0 4px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 18px;
+  }
+
+  .sig-block { text-align: center; font-size: 11px; color: #222; }
+  .sig-line {
+    width: 120px; border-top: 1px solid #333;
+    margin: 20px auto 2px;
+  }
+
+  .seal-circle {
+    width: 70px; height: 70px; border-radius: 50%;
+    border: 3px double #5a8a2a;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto;
+    font-size: 8px; color: #5a8a2a; text-align: center;
+    font-weight: 700; font-family: serif;
+    padding: 4px;
+    line-height: 1.3;
+  }
+
+  .bottom-note {
+    text-align: center;
+    font-size: 10px; color: #555;
+    margin-top: 8px;
+    font-style: italic;
+  }
+</style>
+
+<div class="cert-wrap">
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <div class="header-row">
+    <div class="logo-circle">
+      <div class="logo-text-inner">BD<br>GOVT<br>SEAL</div>
+    </div>
+    <div class="org-block">
+      <div class="org-bn">বাংলাদেশ কারিগরি শিক্ষা বোর্ড, ঢাকা</div>
+      <div class="org-en">Bangladesh Technical Education Board, Dhaka</div>
+      <div class="org-sub">Certificate in National Skill Standard Basic Course Examination</div>
+    </div>
+    <div class="logo-circle">
+      <div class="logo-text-inner">BTEB<br>DHAKA<br>BD</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <hr class="divider2">
+
+  <div class="cert-title">Certificate in National Skill Standard Basic Course Examination</div>
+
+  <div class="reg-row">
+    <span>No: <span style="font-weight:600;">1 0 3 3 0 6 1</span></span>
+    <span>Roll: <span style="font-weight:600;">202024</span></span>
+  </div>
+  <div class="session-row">
+    Session: <span style="font-weight:600;">July – Dec, 2023</span>
+  </div>
+
+  <hr class="divider2">
+
+  <div class="cert-body">
+    <div class="body-line">
+      <span class="label">This is to certify that&nbsp;&nbsp;</span>
+      <span class="value">MARUF AHMED HIRA</span>
+      &nbsp;<span style="font-size:11px; color:#555;">Name</span>
+    </div>
+    <div class="body-line">
+      <span class="label">son/daughter of&nbsp;&nbsp;</span>
+      <span class="value">MD. SHAHABUDDIN MORAL</span>
+      &nbsp;<span style="font-size:11px; color:#555;">Father's Name</span>
+    </div>
+    <div class="body-line">
+      <span class="label">and&nbsp;&nbsp;</span>
+      <span class="value">RUNA BEGUM</span>
+      &nbsp;<span style="font-size:11px; color:#555;">Mother's Name</span>
+    </div>
+    <div class="body-line">
+      <span class="label">of&nbsp;&nbsp;</span>
+      <span class="value">Prince Computer Institute</span>
+      &nbsp;<span style="font-size:11px; color:#555;">Institute Name</span>
+    </div>
+
+    <div class="course-block">
+      <div class="course-title">has passed the <em>National Skill Standards Board (341 Hrs) 6 Months Course</em></div>
+      <div class="course-name">Computer Office Application</div>
+    </div>
+
+    <div class="grade-line">
+      Examination in, <span class="value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      held in the month of <span style="font-weight:600;">July – December, 2023</span>.
+      &nbsp;&nbsp; He/She secured Grade &nbsp;<span class="grade-val">&nbsp;A+&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="footer-row">
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div>Date of Publication</div>
+      <div style="font-weight:600;">January 4, 2024</div>
+    </div>
+
+    <div>
+      <div class="seal-circle">
+        BTEB<br>OFFICIAL<br>SEAL<br>DHAKA
+      </div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div>Deputy Controller of Examination</div>
+      <div>Bangladesh Technical Education Board</div>
+    </div>
+  </div>
+
+  <div class="bottom-note">This Certificate is issued without any erasure or overwriting</div>
+</div>
